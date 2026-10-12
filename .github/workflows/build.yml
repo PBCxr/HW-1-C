@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Compile
-        run: g++ -std=c++17 -o arena main.cpp
+        run: g++ -std=c++17 -o arena "HW-1-C++ (1).cpp"
+
       - name: Run (тест)
         run: echo "0" | ./arena
